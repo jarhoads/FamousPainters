@@ -2,7 +2,7 @@
 A famous painters page I created while learning Typescript
 
 #Screenshot
-
+![FamousPainters](https://raw.githubusercontent.com/jarhoads/FamousPainters/master/docs/screenshot.jpg)
 
 ## What it does
 This app will read data (in JSON form) form from [/json/famousPainters.json](https://github.com/jarhoads/FamousPainters/blob/master/src/json/famousPainters.json) (using jQuery) and used that to display
