@@ -78,6 +78,13 @@ module PainterData{
     }
 }
 ```
+#Installing
+Assuming you have npm installed you should be able to use and are at the project root in the comand line:
+`npm install`
+This will install necessary node modules 
+`npm start`
+This will compile all of the TypeScript files and generate .js and .map (for debugging) files. 
+A watcher will also be created to monitor any changes in the .ts files. Leave the command-window open while doing development work.
 
 #Limitations
 I created this as a way to learn Typescript. It probably doesn't 

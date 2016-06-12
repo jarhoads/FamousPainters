@@ -1,7 +1,7 @@
 'use strict';
 var GulpConfig = (function () {
     function GulpConfig() {
-        //this.source = './Final-Project/';
+        //this.source = './FamousPainters/';
         this.source = './';
         this.scriptsPath = this.source + '/scripts';
         this.allJavaScript = [this.scriptsPath + '/**/*.js'];
