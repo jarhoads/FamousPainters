@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>TypeScript HTML App</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="styles/app.css" type="text/css" />
+    <link href="styles/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <img class="logoImg" src="images/brush.png" />
+            </div>
+            <div class="col-md-11 pull-left">
+                <h1>Famous Painters</h1>
+            </div>
+        </div>
+
+        <h3><span class="label label-info">Famous Painter</span></h3>
+        
+        <div>
+            <select class="form-control" id="PainterSelect">
+                <option id="PainterSelectOpt" disabled>Choose a painter. . .</option>
+            </select>
+        </div>
+
+        <h3><span class="label label-primary">Name</span></h3>
+        <div id="painterName">
+        </div>
+
+        <h3><span class="label label-primary">Style</span></h3>
+        <div class="foodGroups" id="painterStyle"></div>
+
+        <h3><span class="label label-primary">Examples</span></h3>
+        <div class="examples" id="examples"></div>
+
+
+        <div id="content"></div>
+        <script src="scripts/libs/jquery-1.12.2.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="scripts/bootstrapper.js"></script>
+        <script src="scripts/renderer.js"></script>
+        <script src="scripts/painter.js"></script>
+        <script src="scripts/painterData.js"></script>
+        <script src="scripts/painterLoader.js"></script>
+        <script src="scripts/app.js"></script>
+    <div class="container">
+</body>
+
+</html>
