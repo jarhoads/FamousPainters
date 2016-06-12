@@ -36,8 +36,6 @@ module PainterRenderer {
 
 
         renderExamples(painter: PainterData.IPainter) {
-            console.log("inside render examples");
-            console.log(painter);
             //Update examples
             var examples = (<HTMLSelectElement>document.getElementById('examples'));
             examples.value = '';

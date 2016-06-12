@@ -3,12 +3,10 @@ module Bootstrap {
     export class Bootstrapper {
 
         renderer: PainterRenderer.Renderer;
-
         painters: PaintersModule.Painters<PainterData.IPainter>;
 
         loadPainters() {
             var el = (<HTMLSelectElement>document.getElementById('PainterSelect'));
-            console.log(el);
             try {
                 let famousPainter = this.painters.items
                     //Find selected painter (item) by name
@@ -31,16 +29,12 @@ module Bootstrap {
         }
 
         init() {
-            console.log("in bootstrapper init");
             let paintersSelect = (<HTMLSelectElement>document.getElementById('PainterSelect'));
             paintersSelect.onchange = () => this.loadPainters();
 
-            //let painterLoader = new Loader.PainterLoader("/JSON/famousPainters.json");
             let painterLoader = new Loader.PainterLoader('json/famousPainters.json');
             
             painterLoader.load().then((painterData: PainterData.IPainterData) => {
-                console.log(painterData);
-                console.log(painterData.painters);
                 this.painters = painterData.painters;
                 this.renderer = new PainterRenderer.Renderer(painterData.paintersSummary);
             });

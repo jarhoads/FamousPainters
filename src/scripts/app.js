@@ -1,4 +1,4 @@
-//Add your initialization logic here
+// start the app
 window.onload = function () {
     var bootstrapper = new Bootstrap.Bootstrapper();
     bootstrapper.init();

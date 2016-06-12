@@ -7,24 +7,18 @@ var Loader;
         }
         PainterLoader.prototype.load = function () {
             var _this = this;
-            console.log("inside load - url: " + this.url);
-            //$.getJSON('json/famousPainters.json')
             return $.getJSON(this.url).then(function (data) {
-                console.log(data);
                 var painterData = _this.mapData(data);
                 return painterData;
             });
         };
         PainterLoader.prototype.mapData = function (data) {
             var _this = this;
-            console.log("inside mapData - data: " + data);
             if (data) {
                 var fps = data.famousPainters;
                 var painters = new PaintersModule.Painters();
                 var painterSummary = new PaintersModule.Painters();
                 fps.forEach(function (painter) {
-                    console.log("inside mapData foreach");
-                    console.log(painter);
                     var famousPainter = new PaintersModule.Painter({
                         name: painter.name,
                         style: painter.style,
@@ -48,7 +42,6 @@ var Loader;
             }
         };
         PainterLoader.prototype.getExamples = function (examples) {
-            console.log(examples);
             return examples.map(function (example) {
                 return new PaintersModule.Example({
                     name: example

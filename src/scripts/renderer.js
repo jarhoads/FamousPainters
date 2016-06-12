@@ -32,8 +32,6 @@ var PainterRenderer;
             this.renderExamples(painter);
         };
         Renderer.prototype.renderExamples = function (painter) {
-            console.log("inside render examples");
-            console.log(painter);
             //Update examples
             var examples = document.getElementById('examples');
             examples.value = '';
