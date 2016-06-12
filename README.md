@@ -1,6 +1,9 @@
 # Famous Painters
 A famous painters page I created while learning Typescript
 
+#Screenshot
+
+
 ## What it does
 This app will read data (in JSON form) form from [/json/famousPainters.json](https://github.com/jarhoads/FamousPainters/blob/master/src/json/famousPainters.json) (using jQuery) and used that to display
 information about the painter to the user.
@@ -43,7 +46,7 @@ The basic layout is below. There is a dropdown and when the user chooses the pai
 ## Internal Modules
 Each files is broken into internal modules that exposes a class through `export` 
 
-Examples of these include;
+Examples of these include:
 - [painter.ts](https://github.com/jarhoads/FamousPainters/blob/master/src/scripts/painter.ts): contains the `PaintersModule` and exposes these classes:
  `Painters`, `PainterSummary`, `Example`, and `Painter`  
 - [painterData.ts](https://github.com/jarhoads/FamousPainters/blob/master/src/scripts/painterData.ts): contains the `PainterData` module and exposes these interfaces:
@@ -80,9 +83,9 @@ module PainterData{
 ```
 #Installing
 Assuming you have npm installed you should be able to use and are at the project root in the comand line:
-`npm install`
+- `npm install`
 This will install necessary node modules 
-`npm start`
+- `npm start`
 This will compile all of the TypeScript files and generate .js and .map (for debugging) files. 
 A watcher will also be created to monitor any changes in the .ts files. Leave the command-window open while doing development work.
 
