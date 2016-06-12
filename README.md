@@ -81,6 +81,10 @@ module PainterData{
     }
 }
 ```
+
+##Style
+I added [Bootstrap](http://getbootstrap.com/) so I could easily style the page and have a responsive layout.
+
 #Installing
 Assuming you have npm installed you should be able to use and are at the project root in the comand line:
 - `npm install`
